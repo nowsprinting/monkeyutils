@@ -2,7 +2,7 @@
 
 monkeyutils.pyは、Android DSKに同梱の[monkeyrunner](http://developer.android.com/guide/developing/tools/monkeyrunner_concepts.html)によるテストをサポートするモジュールです。
 
-[Androidテスト部](https://sites.google.com/site/androidtestclub/)において、Testterのシステムテスト用に書いたモジュールです。
+[Androidテスト部](https://sites.google.com/site/androidtestclub/)において、Testterのシステムテスト用に作成されました。
 
 現在のところ、
 
