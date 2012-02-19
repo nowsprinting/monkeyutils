@@ -2,7 +2,18 @@
 
 monkeyutils.pyは、Android DSKに同梱の[monkeyrunner](http://developer.android.com/guide/developing/tools/monkeyrunner_concepts.html)によるテストをサポートするモジュールです。
 
-使用例は
+[Androidテスト部](https://sites.google.com/site/androidtestclub/)において、Testterのシステムテスト用に書いたモジュールです。
+
+現在のところ、
+
+- 複数デバイス向けのテストスクリプトを一本化
+- 複数デバイスのテストを自動化
+- スクリーンショットの格納先統一、画像比較の自動化
+
+を実現しています。
+
+
+使用例は、
 
 Testter wiki: [Testterのシステムテスト実行方法](https://atec.backlog.jp/wiki/TESTTER/Testter%E3%81%AE%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%83%86%E3%82%B9%E3%83%88%E5%AE%9F%E8%A1%8C%E6%96%B9%E6%B3%95)
 
@@ -12,15 +23,6 @@ Testter wiki: [Testterのシステムテスト実行方法](https://atec.backlog
 - pass: guest
 
 でログインできます。
-
-
-現在のところ、
-
-- 複数デバイス向けのテストスクリプトを一本化
-- 複数デバイスのテストを自動化
-- スクリーンショットの格納先統一、画像比較の自動化
-
-を実現しています。
 
 
 ##関数一覧
@@ -37,11 +39,8 @@ Windowsでは動作しません。
 引数は、MonkeyDeviceオブジェクト, テストケース上の想定width, 同じくheight。
 
 テスト対象の画面サイズを取得し、想定width/heightとの比率を求めてタプルで返します。
-
 例えば、480x800のデバイス、width=320、height=480が指定された場合、
-
 ( 1.5, 1.67)
-
 が返ります。
 
 各テストケースの先頭で呼び出し、テストケース内で座標指定の補正に使用しています。
